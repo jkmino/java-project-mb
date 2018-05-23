@@ -1,12 +1,15 @@
 pipeline {
-  agent Linux
+  agent any
 
 
   stages {
     stage('build'){
-        steps {
-          sh 'ant -f build.xml -v'
-        }
+      agent {
+        label 'apache'
+      }
+      steps {
+        sh 'ant -f build.xml -v'
+      }
     }
 
   }
