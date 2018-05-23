@@ -1,5 +1,5 @@
 pipeline {
-  agent CentOS
+  agent Linux
 
 
   stages {
