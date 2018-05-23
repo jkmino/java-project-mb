@@ -5,7 +5,7 @@ pipeline {
   stages {
     stage('build'){
       agent {
-        label 'apache'
+        label 'Linux'
       }
       steps {
         sh 'ant -f build.xml -v'
