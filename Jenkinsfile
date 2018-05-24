@@ -58,6 +58,9 @@ options {
       }
     }
     stage('Promote to production path') {
+      agent {
+        label 'development'
+      }
       steps{
         sh "cp /var/www/html/rectangle/all/rectangle_${env.BUILD_NUMBER}.jar /var/www/html/rectangle/green/rectangle_${env.BUILD_NUMBER}.jar "
       }
