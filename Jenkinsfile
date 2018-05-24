@@ -80,6 +80,8 @@ options {
         echo "Staching Any local Changes"
         sh "git stash"
         echo "checking Out Development branch"
+        sh "git checkout development"
+        echo "checking Out Master branch"
         sh "git checkout master"
         echo "merge developmet into master branch"
         sh "git merge development"
