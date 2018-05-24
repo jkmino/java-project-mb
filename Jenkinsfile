@@ -52,7 +52,7 @@ options {
         docker 'openjdk:8u121-jre'
       }
       steps {
-        sh "hostname"
+        sh "echo $(hostname)"
         sh "wget http://jcamino1.mylabserver.com/rectangle/all/rectangle_${env.BUILD_NUMBER}.jar"
         sh "java -jar rectangle_${env.BUILD_NUMBER}.jar 3 4"
       }
