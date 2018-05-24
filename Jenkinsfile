@@ -77,6 +77,7 @@ options {
         branch 'development'
       }
       steps{
+        sh "hostname"
         echo "Staching Any local Changes"
         sh "git stash"
         echo "checking Out Development branch"
