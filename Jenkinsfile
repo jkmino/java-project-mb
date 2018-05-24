@@ -88,6 +88,7 @@ options {
         echo "Pushing to Origin Master"
         sh "git push origin master"
         sh "hostname"
+        sh "free -m"
       }
     }
   }
