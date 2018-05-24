@@ -1,5 +1,7 @@
 pipeline {
-  agent any
+  agent {
+    label 'apache'
+    }
 
 options {
   buildDiscarder (logRotator(numToKeepStr:'2',artifactNumToKeepStr: '1'))
