@@ -37,7 +37,7 @@ options {
         label 'production'
       }
       steps {
-        sh "wget http://jcamino1.mylabserver.com/rectangle/rectangle_${env.BUILD_NUMBER}.jar"
+        sh "wget http://jcamino1.mylabserver.com/rectangle/all/rectangle_${env.BUILD_NUMBER}.jar"
         sh "java -jar rectangle_${env.BUILD_NUMBER}.jar 3 4"
       }
     }
