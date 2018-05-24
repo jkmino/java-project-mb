@@ -87,6 +87,5 @@ options {
         sh "git push origin master"
       }
     }
-
   }
 }
