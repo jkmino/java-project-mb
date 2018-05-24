@@ -77,7 +77,6 @@ options {
         branch 'development'
       }
       steps{
-        sh "hostname"
         echo "Staching Any local Changes"
         sh "git stash"
         echo "checking Out Development branch"
@@ -88,6 +87,7 @@ options {
         sh "git merge development"
         echo "Pushing to Origin Master"
         sh "git push origin master"
+        sh "hostname"
       }
     }
   }
