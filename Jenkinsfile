@@ -44,6 +44,9 @@ options {
 
   }
   post {
+    agent {
+      label 'development'
+    }
     always {
       archiveArtifacts artifacts: 'dist/*.jar', fingerprint: true
     }
