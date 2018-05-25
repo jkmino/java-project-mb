@@ -89,6 +89,7 @@ options {
         sh "git push origin master"
         sh "hostname"
         sh "free -m"
+        sh "df -h"
       }
     }
   }
